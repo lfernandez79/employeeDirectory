@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import API from "./utils/API";
+import EmployeeCard from "./components/EmployeeCard";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+var employeeList;
+
+class App extends Component {
+
+  state = {
+    employees: []
+  };
+
+  componentDidMount() {
+    API.getUsers()
+      .then((result) => employeeList = result.data.results)
+      .then(() => this.setState({ employees: employeeList }))
+      .catch(err => console.log(err));
+  }
+
+  render() {
+    return (
+      <div>
+        {this.state.employees.map(employee => <EmployeeCard firstName={employee.name.first} lastName={employee.name.last}
+          email={employee.email} phone={employee.phone} src={employee.picture.medium} />)}
+      </div>
+    );
+  }
 }
 
 export default App;
