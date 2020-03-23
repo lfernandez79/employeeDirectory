@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import API from "./utils/API";
 import EmployeeCard from "./components/EmployeeCard";
+import Header from "./components/Header";
 
 var employeeList;
 
