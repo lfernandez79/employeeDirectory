@@ -8,27 +8,27 @@ function SortForm() {
     const location = useLocation();
 
     return (
-        <div className="jumbotron">
-            <div className="container d-flex justify-content-around flex-wrap">
+        <div className="">
+            <div className="container d-flex justify-content-between flex-wrap">
                 <Router>
                     <Link to="/">
-                        <button className={location.pathname === "/" ? "btn btn-warning" : "btn btn-success"}>
-                            Default
+                        <button className={location.pathname === "/" ? "btn btn-primary" : "btn btn-primary"}>
+                            Name
                         </button>
                     </Link>
                     <Link to="/male">
-                        <button className={location.pathname === "/male" ? "btn btn-warning" : "btn btn-success"}>
-                            Filter for Men
+                        <button className={location.pathname === "/male" ? "btn btn-success" : "btn btn-success"}>
+                            Men
                         </button>
                     </Link>
                     <Link to="/female">
-                        <button className={location.pathname === "/female" ? "btn btn-warning" : "btn btn-success"}>
-                            Filter for Women
+                        <button className={location.pathname === "/female" ? "btn btn-light" : "btn btn-light"}>
+                            Women
                         </button>
                     </Link>
                     <Link to="/sort">
-                        <button className={location.pathname === "/sort" ? "btn btn-warning" : "btn btn-success"}>
-                            Sort Alphabetically
+                        <button className={location.pathname === "/sort" ? "btn btn-warning" : "btn btn-warning"}>
+                            Alphabetically
                         </button>
                     </Link>
                 </Router>
