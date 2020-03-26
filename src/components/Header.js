@@ -1,13 +1,17 @@
-import React from "react";
+import React, { Component } from 'react';
+import "../styles/Header.css";
 
-function Header() {
-    return (
-        <div className="jumbotron jumbotron-fluid bg-primary">
-            <div className="container">
-                <h1 className="display-4 text-white text-center">Employee Directory</h1>
+export default class Header extends Component {
+    render() {
+        return (
+            <div className="header">
+                <div className="text-info"><h1>Employee Directory</h1></div>
+                <br></br><br></br>
+                <h2>Search Employees by Name, Email or Phone Number</h2>
+                <br></br>
+                <h3> Click on "Name" to Sort Order</h3>
+
             </div>
-        </div>
-    );
+        )
+    }
 }
-
-export default Header;
