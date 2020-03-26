@@ -6,10 +6,10 @@ export default class Header extends Component {
         return (
             <div className="header">
                 <div className="text-info"><h1>Employee Directory</h1></div>
-                <br></br><br></br>
+                <br></br>
                 <h2>Search Employees by Name, Email or Phone Number</h2>
                 <br></br>
-                <h3> Click on "Name" to Sort Order</h3>
+                <h3> Click on "Name" to sort employee</h3>
 
             </div>
         )

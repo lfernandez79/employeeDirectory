@@ -4,7 +4,7 @@ import "../styles/Search.css";
 function Search({ handleSearchChange }) {
     return (
 
-        <div className="searchbox-lg">
+        <div className="searchbox ml-3 mt-2">
             <form className="form-inline-lg">
                 <input
                     className="form-control form-control-lg"
@@ -14,7 +14,7 @@ function Search({ handleSearchChange }) {
                     onChange={e => handleSearchChange(e)}
                 />
             </form>
-            <br></br><br></br>
+            
         </div>
     );
 }

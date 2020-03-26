@@ -1,13 +1,13 @@
 .header {
     padding: 30px;
-    background-color: teal;
+    background-color: seagreen;
 }
 
 h1 {
- font-size: 55px;
+ font-size: 4rem;
  
 }
 
-.text-info {
-    text-decoration-color: white;
+h2, h3 {
+color: snow;
 }
