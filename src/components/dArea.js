@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import DTable from "./dTable";
 import Nav from "./NavBar";
-import API from "../utils/API";
+import API from "../utils/api";
 import "../styles/dArea.css";
 
 export default class DArea extends Component {
