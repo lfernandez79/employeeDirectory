@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import DTable from "./dTable";
 import Nav from "./NavBar";
-import Api from "../utils/API";
+import API from "../utils/API";
 import "../styles/dArea.css";
 
 export default class DArea extends Component {
@@ -12,7 +12,7 @@ export default class DArea extends Component {
     }
 
     headings = [
-        { name: "Photo", width: "10%", padding: "50px" },
+        { name: "Photo", width: "10%", padding: "px" },
         { name: "Name", width: "10%" },
         { name: "Phone", width: "15%" },
         { name: "Email", width: "15%" },
@@ -78,7 +78,7 @@ export default class DArea extends Component {
     }
 
     componentDidMount() {
-        Api.getUsers().then(results => {
+        API.getUsers().then(results => {
             this.setState({
                 users: results.data.results,
                 filteredUsers: results.data.results
