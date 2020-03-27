@@ -1,5 +1,5 @@
 import React from "react";
-// import "../styles/dBody.css";
+import "../styles/dBody.css";
 
 function DBody({ users }) {
     function formatDate(date) {
@@ -25,7 +25,7 @@ function DBody({ users }) {
                                     className="img-responsive"
                                 />
                             </td>
-                            <td data-th="Name" className="name-cell align-middle ">
+                            <td data-th="Name" className="name-cell align-middle">
                                 {name.first} {name.last}
                             </td>
                             <td data-th="Phone" className="align-middle">

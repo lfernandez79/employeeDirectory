@@ -9,7 +9,7 @@ function Search({ handleSearchChange }) {
                 <input
                     className="form-control form-control-lg"
                     type="search-lg"
-                    placeholder="Search Employees..."
+                    placeholder="Type name or last name"
                     aria-label="Search"
                     onChange={e => handleSearchChange(e)}
                 />
